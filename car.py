@@ -1,8 +1,9 @@
 from servicable import Servicable
+import Logger
 
 class Car(Servicable):
     def __init__(self, engine, battery):
-        log.debug('Creating a Car Object...')
+        Logger.debug('Creating a Car Object...')
         self.engine = engine
         self.battery = battery
         super().add_new_car(self)
