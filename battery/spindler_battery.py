@@ -8,5 +8,5 @@ class SpindlerBattery(Battery):
 
     def needs_service(self):
         # 2 years diff, assuming we are passed in a datetime object for each
-        return (self.current_date - self.last_service_date).days >= (365 * 2)
+        return (self.current_date - self.last_service_date).days >= (365 * 3) #leap years will affect this a bit
         
